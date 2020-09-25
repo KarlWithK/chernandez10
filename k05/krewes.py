@@ -8,7 +8,7 @@ KREWES = {
     'endymion': ['JASON', 'DEAN', 'MADDIE', 'SAQIF', 'CINDY', 'YI LING', 'RUOSHUI', 'FB', 'MATTHEW', 'MAY', 'ERIN', 'MEIRU']
 }
 
-def getRandomName():
+def get_random_name():
     print("Team names: orpheus, rex, endymion!\n")
     name = input("Enter a team:\n")
     team = KREWES[name]
@@ -16,4 +16,4 @@ def getRandomName():
 
 
 if __name__ == "__main__":
-    getRandomName()
+    get_random_name()

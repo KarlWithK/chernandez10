@@ -10,7 +10,7 @@ KREWES = {
 
 def get_random_name():
     print("Team names: orpheus, rex, endymion!\n")
-    name = input("Enter a team:\n")
+    name = str(input("Enter a team:\n")).lower()
     team = KREWES[name]
     print(choice(team))
 

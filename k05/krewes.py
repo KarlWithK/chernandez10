@@ -9,6 +9,7 @@ KREWES = {
 }
 
 def getRandomName():
+    print("Team names: orpheus, rex, endymion!\n")
     name = input("Enter a team:\n")
     team = KREWES[name]
     print(choice(team))

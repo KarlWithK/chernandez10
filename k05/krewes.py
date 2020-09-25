@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# made by William Li, May Hathaway, and Carlos "Karl" Hernandez
+# Made by William Li, May Hathaway, and Carlos "Karl" Hernandez
 from random import choice
 
 KREWES = {

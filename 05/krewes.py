@@ -10,10 +10,10 @@ KREWES = {
 }
 
 def get_random_name():
-    print("Team names: orpheus, rex, endymion!\n")
-    name = str(input("Enter a team:\n")).lower()
+    print("Team name: orpheus, rex, endymion!\n")
+    name = input("Enter a team:\n").lower()
     while name not in KREWES:
-        name = str(input("Please Enter a correct team:\n")).lower()
+        name = input("Please enter a correct team:\n").lower()
     team = KREWES[name]
     print(choice(team))
 

@@ -1,4 +1,9 @@
 #!/usr/bin/env python
+# Carlos "Karl" Hernandez
+# SoftDev
+# K05 -- Aim: started to use python in softdev
+# 2020-09-30
+
 # Line above is just to make sure you don't need the .py extension
 # Made by William Li, May Hathaway, and Carlos "Karl" Hernandez
 from random import choice

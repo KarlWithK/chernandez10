@@ -13,16 +13,15 @@ def get_random_occupations():
     with open("./occupations.csv", "r", newline='') as csv_file:
         # we are lazy so we used the csv library
         reader = csv.reader(csv_file, delimiter=',')
-        header = next(csv_file) # we wanted to get rid of the header
         occupations = {} # initialize the dictionary
         for row in reader:
-            occupations[row[0]] = float(row[1]) # populated the dictionary
-        del occupations['Total'] # deleted the last row
+            if not (row[0] == "Job Class" or row[0] == "Total"): # skip over lines
+                occupations[row[0]] = float(row[1]) # populated the dictionary
         # next two lines are so we can use random.choices()
         key = list(occupations.keys())
         values = list(occupations.values())
-        print(choices(key, weights=values, k=1)[0]) # print the occupation
+        return choices(key, values, k=1)[0]
 
 
 if __name__ == "__main__":
-    get_random_occupations()
+    print(get_random_occupations())

@@ -11,13 +11,17 @@ with open("./occupations.csv", "r", newline='') as csv_file:
             occupations[row[0]] = float(row[1]) # populated the dictionary
 
 
+key = list(occupations.keys())
+values = list(occupations.values())
+
+def get_all_jobs():
+    return key
+
+
 def get_random_occupations():
     # need to open file
         # next two lines are so we can use random.choices()
-        key = list(occupations.keys())
-        values = list(occupations.values())
-        job = choices(key, values, k=1)[0]
-        return (key, job)
+        return choices(key, values, k=1)[0]
 
 
 if __name__ == "__main__":

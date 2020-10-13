@@ -11,7 +11,7 @@ with open("./occupations.csv", "r", newline='') as csv_file:
             occupations[row[0]] = float(row[1]) # populated the dictionary
 
 
-# only have to calculate once
+# only have to assign once
 key = list(occupations.keys())
 values = list(occupations.values())
 

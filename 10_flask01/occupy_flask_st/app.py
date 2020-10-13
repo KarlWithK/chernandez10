@@ -24,6 +24,5 @@ def index():  # index page
     return_html += jobs
     return return_html  # returns html
 
-
 if __name__ == '__main__':
     app.run()

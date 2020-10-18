@@ -12,8 +12,8 @@ occupations = []  # global array so occupations stay even after reload
 def index():  # index page
     return_html = ''  # Variable that contains all text that will be displayed
     jobs = ''  # So we can know what is going on in the for loop
-    return_html += "<h1>Team AutoKAD: Andrew Jiang, Dean Carey"
-    return_html += ", Carlos 'Karl' Hernandez</h1><br>"
+    return_html += "<h1>Team RainingMars: Andrew Jiang, Saqif Abedin"
+    return_html += ", and Carlos 'Karl' Hernandez</h1><br>"
     occupations.append(get_random_occupations())  # returns random job
     # next two lines is for fancy list and headers
     return_html += "<ul><li><h4>" + "</h4></li><li><h4>".join(occupations)

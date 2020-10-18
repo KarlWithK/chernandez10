@@ -9,7 +9,24 @@
 		body {
 			background-color: #10151a;
 			color: #ebdbb2;
-			text-align:center;
+			text-align: center;
+		}
+
+		a {
+			text-decoration: none;
+			cursor: default;
+			color: #ebdbb2;
+		}
+
+		a:hover {
+			cursor: default;
+			color: #98cfe5;
+		}
+
+		a:visited {
+			text-decoration: none;
+			cursor: default;
+			color: #ebdbb2;
 		}
 	</style>
 </head>
@@ -26,10 +43,10 @@
 		</tr>
 		<br>
 		<!-- so this just iterates through the tuple occupations that has two lists (keys, values) -->
-		{% for key, value in occupations %}
+		{% for key, link, value in occupations %}
 		<tr>
-			<th> {{ key }}</th>
-			<th> {{ value }}</th>
+			<th><a href="{{ link }}" target="_blank">{{ key }}</a></th>
+			<th> {{ value }} </th>
 		</tr>
 		{% endfor %}
 		<tr>

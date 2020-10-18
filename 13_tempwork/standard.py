@@ -2,18 +2,20 @@
 import csv
 from random import choices
 
-occupations = {} # initialize the dictionary
+key = []
+links = []
+values = []
 with open("./data/occupations.csv", "r", newline='') as csv_file:
+    # occupations = {} # we don't want to use a dictionary cuz our methods
+    # require lists
     # we are lazy so we used the csv library
     reader = csv.reader(csv_file, delimiter=',')
     for row in reader:
         if not (row[0] == "Job Class" or row[0] == "Total"): # skip over lines
-            occupations[row[0]] = float(row[1]) # populated the dictionary
+            key.append(row[0])
+            links.append(row[1])
+            values.append(float(row[2]))
 
-
-# only have to assign once
-key = list(occupations.keys())
-values = list(occupations.values())
 
 def get_all_jobs() -> list:
     return key
@@ -21,7 +23,7 @@ def get_all_jobs() -> list:
 def get_occupations() -> tuple:
     # we found that you had to zip to create a tuple so
     # jinja can iterate through each list
-    return zip(key, values)
+    return zip(key, links, values)
 
 
 def get_random_occupations() -> str:

@@ -1,4 +1,8 @@
 #!/usr/bin/env python
+# Team SeniorMars: Andrew Jiang, Saqif Abedin, and Carlos Hernandez
+# SoftDev
+# K13: Template for Success: Started working with tuples to iterate with jinja.
+# 2020-10-19
 import csv
 from random import choices
 

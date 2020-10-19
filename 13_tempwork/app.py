@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-# Team: RainingMars - Andrew Jiang, Saqif Abedin, and Karl Hernandez
+# Team SeniorMars: Andrew Jiang, Saqif Abedin, and Carlos Hernandez
 # SoftDev
-# K12 -- Putting Little Pieces Together: Learned basic html and global
-# variables
+# K13: Template for Success: Started working with tuples to iterate with jinja.
+# 2020-10-19
 from flask import Flask, render_template
 from standard import get_random_occupations, get_all_jobs, get_occupations
 app = Flask(__name__)

@@ -1,0 +1,25 @@
+Carlos "Karl" Hernandez
+SoftDev
+LJ00 -- Le Voyage de Learnination avec Mongo, Première Phase: MongoDB Continues  
+2020-10-27
+* Use mongo "mongodb+srv://m001-student:m001-mongodb-basics@<cluster>.mongodb.net/admin" to log in
+* JSON -> JavaScript Standard Object Notation with the format something like this:
+	```json
+	{
+		"key": "value",
+		"books": {
+			"book1": "The Cat in The Hat",
+			"book2": "Monogatari"
+		},
+		"num": 65
+	}
+	```
+	* Encoded in UTF-8, Human readable, and supports only: strings, booleans, number, and arrays.
+	* Pros of JSON: Friendly, Readable, and Familiar
+	* On the other hand: It is Text-based, Space-Consuming, Limited.
+* BSON -> Binary JSON. A format that bridges the gap between binary representation and JSON format.
+	* Encoded in Binary, only readable by machines, and supports everything supported by JSON **AND** dates and raw binary.
+	* MongoDB stores documents in BSON, but has all JSON features.
+* Edit or make scripts with mongodb -> https://docs.mongodb.com/manual/tutorial/configure-mongo-shell/
+* Commands: mongodumb, mongoexport, mongorestore, and mongoimport
+* mongo shell: `show dbs`, `use <collection>`, `show collections`, and `db.<collection>.find({query})`, `.count()`, and `.pretty()`

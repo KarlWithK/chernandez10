@@ -1,0 +1,24 @@
+Carlos "Karl" Hernandez
+SoftDev
+LJ01 -- Le Voyage de Learnination avec Mongo, Deuxième Phase. Aim: Completed chapter 3
+2020-11-09
+
+* "_id" is a unique identifier for a document in a collection that is required.
+* Use `insert document` in the Data Explorer
+* ObjectID() is the default value for the "_id" field unless otherwise specified.
+* Use `--drop` for deleting duplicates when importing
+* `findOne()` is a function that gives you a general outline of the document or to find a query.
+* "_id" gets generated which means identical documents can exist in the same collection as long as their "_i" values are different. -> scheme validation
+* you can insert multiple documents with an array in format [{}, {}, {}], {"ordered: false}
+* If you misspell you create a collection.
+* Arrays as a "value"
+* mongo query language -> MQL
+* `updateOne` and	`updateMany` -> to update
+* Update Operators
+	* {"$inc": {"field": "increment value"}}
+	* {"$set": {"field": "new value"}} -> can create new fields
+	* {"$push": {"field": "new value"}} -> adds an element at an array -> can create array field
+* `deleteOne` and	`deleteMany` -> to delete:
+	* "deleteOne" -> use only with "_id:11"
+* delete a collection with drop -> `db.<collection>.drop()`
+* db.zips.updateMany({"city": "NEW YORK"}, {"$set": {"capital?": false}})

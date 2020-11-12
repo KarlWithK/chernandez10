@@ -1,6 +1,6 @@
 Carlos "Karl" Hernandez
 SoftDev
-LJ01 -- Le Voyage de Learnination avec Mongo, Deuxième Phase. Aim: Completed chapter 3
+LJ01 -- Le Voyage de Learnination avec Mongo, Deuxième Phase. Aim: Completed chapter 3 and learned about operators
 2020-11-09
 
 * "_id" is a unique identifier for a document in a collection that is required.

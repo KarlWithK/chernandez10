@@ -1,0 +1,25 @@
+Carlos "Karl" Hernandez
+SoftDev
+LJ01 -- Le Voyage de Learnination avec Mongo, Deuxième Phase. Aim: Completed chapter 4 and learned about more operators and what the `$` means
+
+* MQL Operators -> Provide Additional ways to locate data within the database
+* Comparison Operators:
+	* $eq = Equal to
+	* $neq = Not Equal to
+	* $gt = greator than
+	* $lt = less than
+	* $gte = Greator Than or Equal To
+	* $lte = Less Than or Equal To
+	```mongo
+	db.trips.find({ "tripduration": { "$lte" : 70 },
+                "usertype": { "$ne": "Subscriber" } }).pretty()
+	```
+	* `db.zips.find({ "pop": { "$lt" : 1000 }}).count()`
+* Logic Operators:
+	* `$and`: Match all of the specified query clauses - default - combine a lot of statement
+	* `$or`: At least one of the query claues is matched
+	* `$nor`: Fail to match both given clauses
+	* `not: statement]`
+* `{"$expr": {<expression>}}`
+* `$`: denotes the use of an operator and address the field value
+* Aggegation syntax: `{<operator>: {<field>, <value>}}`

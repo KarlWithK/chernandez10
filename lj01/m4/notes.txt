@@ -1,15 +1,16 @@
 Carlos "Karl" Hernandez
 SoftDev
 LJ01 -- Le Voyage de Learnination avec Mongo, Deuxième Phase. Aim: Completed chapter 4 and learned about more operators and what the `$` means
+2020-11-9
 
 * MQL Operators -> Provide Additional ways to locate data within the database
 * Comparison Operators:
-	* $eq = Equal to
-	* $neq = Not Equal to
-	* $gt = greator than
-	* $lt = less than
-	* $gte = Greator Than or Equal To
-	* $lte = Less Than or Equal To
+	* `$eq` = Equal to
+	* `$neq` = Not Equal to
+	* `$gt` = greator than
+	* `$lt` = less than
+	* `$gte` = Greator Than or Equal To
+	* `$lte` = Less Than or Equal To
 	```mongo
 	db.trips.find({ "tripduration": { "$lte" : 70 },
                 "usertype": { "$ne": "Subscriber" } }).pretty()
@@ -22,4 +23,13 @@ LJ01 -- Le Voyage de Learnination avec Mongo, Deuxième Phase. Aim: Completed ch
 	* `not: statement]`
 * `{"$expr": {<expression>}}`
 * `$`: denotes the use of an operator and address the field value
-* Aggegation syntax: `{<operator>: {<field>, <value>}}`
+* Aggregation syntax: `{<operator>: {<field>, <value>}}`
+* `$push`: Allows us to add an element to an array -> arrays matter
+* `$all`: finds all with `['shampoo']`: Returns a cursor with all documents in which the specified array fields contains all the given elments regardless of their order in the array
+* `$size`: index of array -> Returns a cursor with all document's where the specified array field is exactly the given length
+* `{ <projection> }`:
+	* `1` - include the field
+	* `0` - exclude the field
+	* `$elemMatch`: Matches documents that contain an array field with at least one elment that matches the specified criteria.
+* MQL uses dot-notation to specify the address of nested elments in a document -> `field 1. other field. also a field: "value"`
+* `$regex`

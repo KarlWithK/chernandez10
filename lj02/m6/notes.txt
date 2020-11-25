@@ -1,0 +1,17 @@
+Carlos "Karl" Hernandez
+SoftDev
+LJ02: Le Voyage de Learnination avec Mongo, Troisième Phase: I watched an ad for Atlas :think:
+2020-11-25
+* Schemea Anit-Patterns - suggests queries
+* Aggregation tab -> preview the data after pipeline -> creates imports statements to use pipeline in a programming language
+* Atlas has organization -> to bill
+	* Realms is a service to sync mongodb to your application
+	* Charts allows you to visualize your data -> heatmaps
+* Compass is a mongodb gui...ew:
+	* view as table
+	* Also has explain plan -> see how much time
+	* import query
+	* schema is to view meta data
+	* indexes -> view created indexes
+	* much easier to create queries
+	* validation -> to create rules on what is allow on your database

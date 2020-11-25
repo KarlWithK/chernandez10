@@ -1,0 +1,19 @@
+Carlos "Karl" Hernandez
+SoftDev
+LJ02: Le Voyage de Learnination avec Mongo, Troisième Phase: Started to learn about aggregate and data modeling
+2020-11-25
+
+* Aggregation Framework: Another way to query data in MongoDB -> `aggregate` -> pipeline -> order matters
+* Use Aggregation to build complex filters
+* `$group`: An operator that takes the incoming stream of data, and siphons it into multiple distinct reservoirs
+* Cursor Methods
+	* `$sort`: sort based on find -> sorts first
+	* `$limit`: get n results
+	* `pretty() and count()`
+* `createIndex` -> speeds up queries -> Single field index vs compound index
+* `Data modeling` - a way to organize fields in a document to support your application performance and querying capabilities:
+ * Data is stored in the way that it is used
+* Every function that is used to locate can update a field
+* `upsert` -> a hybrid of update and insert -> be careful -> set to false by default
+	* true -> conditional updates
+	* false -> insert a brand new document

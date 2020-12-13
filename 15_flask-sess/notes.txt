@@ -1,0 +1,4 @@
+Team E and F (Karl Hernandez, Eric Lo, Amelia Chin, Ari Schechter)
+SoftDev
+K15 — Sessions Greetings / write a Flask app that uses session capabilities to allow a user to login and logout
+2020-12-12
